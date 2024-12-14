@@ -4,7 +4,7 @@
   "description": "��#\u0000 \u0000C\u0000r\u0000e\u0000a\u0000t\u0000i\u0000v\u0000e\u0000-\u0000U\u0000I\u0000-\u0000d\u0000e\u0000s\u0000i\u0000g\u0000n\u0000e\u0000r\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css"
   },
   "repository": {
     "type": "git",
