@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jasmina001/Creative-UI-designer/issues"
   },
-  "homepage": "https://github.com/jasmina001/Creative-UI-designer#readme"
+  "homepage": "https://github.com/jasmina001/Creative-UI-designer#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  }
 }
