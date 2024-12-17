@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-[#222831]">
-    
-         <!-- Navbar Boshlanishi -->
+
+    <!-- Navbar Boshlanishi -->
     <nav class="flex justify-between items-center px-8 py-4 shadow-lg">
         <!-- Logo -->
         <div class="text-2xl font-bold text-white">
@@ -36,28 +38,92 @@
                 &#9776;
             </button>
         </div>
-        
     </nav>
-   
 
-    <section class="flex justify-center items-center mt-10 gap-24">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden flex-col space-y-4 bg-gray-800 text-white px-8 py-4 absolute top-20 right-0 w-full">
+        <a href="#home" class="hover:text-teal-400 transition">Home</a>
+        <a href="#about" class="hover:text-teal-400 transition">About Me</a>
+        <a href="#projects" class="hover:text-teal-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+    </div>
+
+    <!-- JavaScript -->
+
+
+    <section class="flex flex-col md:flex-row justify-center items-center mt-10 gap-6 md:gap-24">
         <div>
-            <img src="/assets/Vector 187.png" alt="strelka">
+            <img src="/assets/Vector 187.png" alt="strelka" class="w-4/5 md:w-auto">
         </div>
-        <div>
-            <b class="text-white text-9xl">
-                CREATIVE UI 
+        <div class="text-center md:text-left">
+            <b class="text-white text-6xl md:text-8xl">
+                CREATIVE UI
             </b><br>
-            <b class="text-[#00ADB5] text-9xl">
+            <b class="text-[#00ADB5] text-6xl md:text-8xl">
                 DESIGNER
             </b><br>
-            <button class="px-5 py-2 rounded-xl bg-[#00ADB5] mt-5 hover:bg-slate-200 ">
+            <button class="px-5 py-2 rounded-xl bg-[#00ADB5] mt-5 hover:bg-slate-200">
                 <a class="text-white hover:text-[#00ADB5]" href="">Hire me</a>
             </button>
         </div>
         <div>
-            <img src="/assets/Group 2346.png" alt="">
+            <img src="/assets/Group 2346.png" alt="" class="w-4/5 md:w-auto">
         </div>
     </section>
+
+    <section  class="flex flex-col md:flex-row justify-center items-center mt-10 gap-6 md:gap-24">
+        <div>
+            <b class="text-white text-6xl md:text-7xl">About </b>
+            <b class="text-[#00ADB5] text-6xl md:text-7xl">me</b>
+            <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit. Nunc vulputate libero et velit interdum,<br> ac
+                aliquet odio mattis. Class<br> aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos. Curabitur tempus urna<br> at turpis condimentum lobortis.... Read more
+            </p>
+        </div>
+        <div>
+            <img src="/assets/Group 62.png" alt="">
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <b class="text-white text-6xl md:text-7xl"">My recent</b>
+            <b class="text-[#00ADB5] text-6xl md:text-7xl">works</b>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const menuButton = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>
