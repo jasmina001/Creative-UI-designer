@@ -7,6 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body class="bg-[#222831]">
@@ -18,7 +24,7 @@
             SaulDesign
         </div>
         <!-- Nav Links -->
-        <ul class="hidden md:flex space-x-8">
+        <ul class="hidden md:flex  space-x-8">
             <li>
                 <a href="#home" class="text-white hover:text-teal-400 transition">Home</a>
             </li>
@@ -34,7 +40,7 @@
         </ul>
         <!-- Mobile Menu Icon -->
         <div class="md:hidden">
-            <button id="menu-btn" class="text-2xl focus:outline-none">
+            <button id="menu-btn" class="text-2xl text-white hover:text-blue-400 focus:outline-none">
                 &#9776;
             </button>
         </div>
@@ -52,7 +58,7 @@
     <!-- JavaScript -->
 
 
-    <section class="flex container mx-auto flex-col md:flex-row justify-center items-center mt-10 gap-14 md:gap-24">
+    <section id="home" class="flex container mx-auto flex-col md:flex-row justify-center items-center mt-10 gap-14 md:gap-24">
         <div>
             <img src="/assets/Vector 187.png" alt="strelka" class="w-4/5 md:w-auto">
         </div>
@@ -72,7 +78,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col md:flex-row justify-center items-center mt-10 gap-6 md:gap-24">
+    <section id="about" class="flex flex-col md:flex-row justify-center items-center mt-10 gap-6 md:gap-24">
         <div>
             <b class="text-white text-6xl md:text-7xl">About </b>
             <b class="text-[#00ADB5] text-6xl md:text-7xl">me</b>
@@ -89,7 +95,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center md:flex-row container mx-auto mt-10 gap-6 md:gap-8">
+    <section id="projects" class="flex flex-col items-center justify-center md:flex-row container mx-auto mt-10 gap-6 md:gap-8">
         <div>
             <b class="text-white text-6xl md:text-7xl">My recent</b>
             <b class="text-[#00ADB5] text-6xl md:text-7xl">works</b><br>
@@ -100,7 +106,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col md:flex-row justify-center container mx-auto items-center mt-10 gap-6 md:gap-2">
+    <section id="contact" class="flex flex-col md:flex-row justify-center container mx-auto items-center mt-10 gap-6 md:gap-2">
         <div>
             <img src="/assets/Frame 10.png" alt="">
         </div>
@@ -144,7 +150,7 @@
 
 
 
-    <footer class="container mx-auto justify-center items-center flex mt-24">
+    <footer class="container mx-auto justify-center items-center flex gap-5 mt-24">
         <div>
             <img src="/assets/Frame 20.png">
         </div>
@@ -155,6 +161,9 @@
             <img src="/assets/Frame 22.png">
         </div>
     </footer>
+    <div class="text-center">
+        <a class="text-teal-300 hover:text-teal-600" href="">with login</a>
+    </div>
 
 
 
